@@ -1,0 +1,38 @@
+{
+    "name": "cv/laravel-data-extra",
+    "type": "library",
+    "require": {
+        "spatie/laravel-data": "^4.9",
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.12",
+        "laravel/pint": "^1.17"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cv\\LaravelDataExtra\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cv"
+        }
+    ],
+    "scripts": {
+        "analyse": [
+            "@php vendor/bin/phpstan analyse"
+        ],
+        "pint": [
+            "@php vendor/bin/pint"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cv\\LaravelDataExtra\\LaravelDataExtraProvider"
+            ]
+        }
+    }
+}
