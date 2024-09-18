@@ -1,5 +1,6 @@
 {
     "name": "cv/laravel-data-extra",
+    "description": "laravel data extra",
     "type": "library",
     "require": {
         "spatie/laravel-data": "^4.9",
